@@ -7,7 +7,7 @@ ENV BUILD_DEPENDENCIES curl ca-certificates
 RUN apt-get update && \
     apt-get install -y --no-install-recommends $BUILD_DEPENDENCIES \
       numactl \
-      libssl1.0.0 && \
+      libssl1.0.2 && \
     rm -rf /var/lib/apt/lists/*
 
 
