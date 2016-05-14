@@ -1,4 +1,4 @@
-FROM debian:testing
+FROM debian:8
 MAINTAINER Vladimir Kozlovski <inbox@vladkozlovski.com>
 ENV DEBIAN_FRONTEND noninteractive
 
