@@ -7,7 +7,7 @@ ENV BUILD_DEPENDENCIES curl ca-certificates
 RUN apt-get update && \
     apt-get install -y --no-install-recommends $BUILD_DEPENDENCIES \
       numactl \
-      libssl1.0.2 && \
+      libssl1.0.0 && \
     rm -rf /var/lib/apt/lists/*
 
 
@@ -20,7 +20,7 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
         chmod +x /usr/local/bin/gosu
 
 
-ENV MONGO_VERSION 3.2.6
+ENV MONGO_VERSION 3.2.7
 ENV MONGO_DOWNLOAD_URL https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian71-$MONGO_VERSION.tgz
 ENV MONGO_RELEASE_FINGERPRINT 42F3E95A2C4F08279C4960ADD68FA50FEA312927
 
