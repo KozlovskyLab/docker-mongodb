@@ -20,9 +20,9 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
         chmod +x /usr/local/bin/gosu
 
 
-ENV MONGO_VERSION 3.2.12
+ENV MONGO_VERSION 3.4.1
 ENV MONGO_DOWNLOAD_URL https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian71-$MONGO_VERSION.tgz
-ENV MONGO_RELEASE_FINGERPRINT 42F3E95A2C4F08279C4960ADD68FA50FEA312927
+ENV MONGO_RELEASE_FINGERPRINT 0C49F3730359A14518585931BC711F9BA15703C6
 
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
 RUN groupadd -r mongodb && \
