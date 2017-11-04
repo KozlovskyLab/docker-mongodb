@@ -20,7 +20,7 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
         chmod +x /usr/local/bin/gosu
 
 
-ENV MONGO_VERSION 3.4.6
+ENV MONGO_VERSION 3.4.7
 ENV MONGO_DOWNLOAD_URL https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian71-$MONGO_VERSION.tgz
 ENV MONGO_RELEASE_FINGERPRINT 0C49F3730359A14518585931BC711F9BA15703C6
 
